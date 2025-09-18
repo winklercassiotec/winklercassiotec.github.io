@@ -1,268 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Cássio Winkler | Contato</title>
-<meta name="description" content="Cássio Winkler, analista de sistemas">
-<meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cássio Winkler | Analista de Sistemas</title>
+  <meta name="description" content="Perfil de Cássio Winkler, Analista de Sistemas Sênior e Desenvolvedor Full-Stack. Conecte-se no LinkedIn.">
+  <meta name="robots" content="index, follow">
 
-<!-- Structured Data SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Cássio Winkler",
-  "jobTitle": "Analista de Sistemas",
-  "url": "https://cassio.tec.br",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer support",
+  <!-- Redirecionamento imediato -->
+  <meta http-equiv="refresh" content="0; url=https://www.linkedin.com/in/cassiowinkler1/">
+
+  <!-- Structured Data SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cássio Winkler",
+    "jobTitle": "Analista de Sistemas Sênior | Desenvolvedor Full-Stack",
     "url": "https://cassio.tec.br",
-    "availableLanguage": "Portuguese"
+    "sameAs": [
+      "https://www.linkedin.com/in/cassiowinkler1/"
+    ]
   }
-}
-</script>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --primary: #128C7E;
-  --primary-dark: #075E54;
-  --user-msg: #34B7F1;
-  --bot-msg: #E6F4EA;
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-html, body {
-  width:100%; height:100%;
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #f0f3f5, #d9e2ec);
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.chat-container {
-  width: 100%;
-  max-width: 480px;
-  height: 100dvh;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.chat-header {
-  background: linear-gradient(90deg, var(--primary-dark), var(--primary));
-  color: #fff;
-  padding: clamp(14px, 3vw, 18px);
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  font-weight: 700;
-  text-align: center;
-  position: relative;
-}
-.chat-header h1 { 
-  position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; 
-}
-.chat-body {
-  flex: 1;
-  padding: clamp(12px, 3vw, 20px);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-.chat-body::-webkit-scrollbar { width: 6px; }
-.chat-body::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 3px; }
-.message {
-  max-width: 75%;
-  padding: 14px 20px;
-  border-radius: 25px;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
-  line-height: 1.4;
-  word-wrap: break-word;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.3s forwards;
-}
-.bot { background: var(--bot-msg); align-self: flex-start; color: #0B5D34; }
-.user { background: var(--user-msg); color: white; align-self: flex-end; }
-@keyframes fadeInUp { to { opacity:1; transform: translateY(0); } }
-.typing {
-  display: flex; align-items: center; gap: 4px; opacity: 0.8;
-}
-.typing-dot {
-  width: 8px; height: 8px;
-  background: #0B5D34; border-radius: 50%;
-  animation: bounce 0.6s infinite alternate;
-}
-.typing-dot:nth-child(2) { animation-delay: 0.2s; }
-.typing-dot:nth-child(3) { animation-delay: 0.4s; }
-@keyframes bounce { from { transform: translateY(0); opacity:0.4; } to { transform: translateY(-6px); opacity:1; } }
-.input-container {
-  display: flex;
-  padding: 14px;
-  gap: 12px;
-  border-top: 1px solid #e0e0e0;
-  background: #fafafa;
-}
-.input-container input {
-  flex: 1;
-  padding: 12px 18px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  outline: none;
-  font-size: 1rem;
-  transition: all 0.2s;
-}
-.input-container input:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 6px rgba(18,140,126,0.3);
-}
-.input-container button {
-  padding: 12px clamp(18px, 5vw, 25px);
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.2s;
-  flex-shrink: 0;
-}
-.input-container button:hover { background: var(--primary-dark); transform: translateY(-2px); }
-.error-message { color: #FF3B30; font-size: 0.85rem; margin: 5px 20px; }
-@media (max-width: 500px) { .chat-container { border-radius:0; } }
-</style>
+  </script>
 </head>
 <body>
-
-<div class="chat-container">
-  <div class="chat-header">
-    Entre em contato
-    <h1>Cássio Winkler</h1>
-  </div>
-  <div class="chat-body" id="chatBody"></div>
-  <div class="input-container">
-    <input type="text" id="userInput" placeholder="Digite aqui..." />
-    <button id="sendBtn">Enviar</button>
-  </div>
-  <div id="error" class="error-message"></div>
-</div>
-
-<script>
-const chatBody = document.getElementById('chatBody');
-const userInput = document.getElementById('userInput');
-const sendBtn = document.getElementById('sendBtn');
-const errorDiv = document.getElementById('error');
-
-let step = 0;
-const userData = {};
-const encryptedNumber = "KzU1NDI5OTgzNTQ5Nw==";
-
-function decryptNumber(enc){ return atob(enc); }
-function scrollChat(){ chatBody.scrollTop = chatBody.scrollHeight; }
-
-function showTyping(callback, min=400, max=1000){
-  const typingDiv = document.createElement('div');
-  typingDiv.className='message bot typing';
-  typingDiv.innerHTML='<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';
-  chatBody.appendChild(typingDiv);
-  scrollChat();
-  setTimeout(()=>{
-    typingDiv.remove();
-    callback();
-  }, Math.random()*(max-min)+min);
-}
-
-function appendMessage(text, sender){
-  const msgDiv = document.createElement('div');
-  msgDiv.className = `message ${sender}`;
-  msgDiv.innerHTML = text;
-  chatBody.appendChild(msgDiv);
-  scrollChat();
-}
-
-function formatPhone(value){
-  value=value.replace(/\D/g,'');
-  if(value.length>10) return value.replace(/^(\d{2})(\d{5})(\d{4}).*/,"($1) $2-$3");
-  if(value.length>5) return value.replace(/^(\d{2})(\d{4})(\d{0,4}).*/,"($1) $2-$3");
-  if(value.length>2) return value.replace(/^(\d{2})(\d{0,5})/, "($1) $2");
-  return value.replace(/^(\d*)/, "($1");
-}
-
-function validateEmail(email){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
-function clearError(){ errorDiv.textContent=''; }
-
-const steps = [
-  "Olá! Seja bem-vindo ao meu site.<br>Por favor, digite seu nome completo:",
-  "Perfeito! Agora informe seu telefone/celular:",
-  "Ótimo! Qual o seu melhor e-mail para contato?",
-  "Por fim, me conte como posso ajudar (descreva brevemente):",
-  "Tudo pronto! Redirecionando para o WhatsApp..."
-];
-
-function botNextStep(){
-  if(step < steps.length-1){
-    showTyping(()=>appendMessage(steps[step],'bot'));
-  } else {
-    showTyping(()=>{
-      appendMessage(steps[step],'bot');
-      userInput.disabled=true; sendBtn.disabled=true;
-      const number = decryptNumber(encryptedNumber);
-      const waLink = `https://wa.me/${number.replace(/\D/g,'')}?text=${encodeURIComponent(
-        "*Nome:* "+userData.name+"\n"+
-        "*Telefone:* "+userData.phone+"\n"+
-        "*E-mail:* "+userData.email+"\n"+
-        "*Mensagem:* "+userData.message
-      )}`;
-      setTimeout(()=>window.open(waLink,"_blank"),800);
-    },600,1200);
-  }
-}
-
-function nextStep(){
-  let value = userInput.value.trim();
-  clearError();
-  if(!value) return;
-
-  if(step===1){ 
-    const rawPhone = value.replace(/\D/g,'');
-    if(rawPhone.length<10){ errorDiv.textContent="Digite um telefone válido."; return; }
-    value=formatPhone(rawPhone);
-  }
-  if(step===2){ 
-    if(!validateEmail(value)){ errorDiv.textContent="Digite um e-mail válido."; return; } 
-  }
-
-  appendMessage(value,'user');
-  userInput.value='';
-
-  switch(step){
-    case 0: userData.name=value; break;
-    case 1: userData.phone=value; break;
-    case 2: userData.email=value; break;
-    case 3: userData.message=value; break;
-  }
-  step++;
-  botNextStep();
-}
-
-userInput.addEventListener("input", function(){ 
-  if(step===1) this.value = formatPhone(this.value.replace(/\D/g,'')); 
-});
-userInput.addEventListener("keypress", e=>{ if(e.key==="Enter") nextStep(); });
-sendBtn.addEventListener("click", nextStep);
-
-// inicia conversa pré-renderizada
-setTimeout(botNextStep, 300);
-</script>
-
+  <p>Você está sendo redirecionado para meu LinkedIn: 
+    <a href="https://www.linkedin.com/in/cassiowinkler1/">clique aqui caso não seja redirecionado automaticamente</a>.
+  </p>
 </body>
 </html>
-
