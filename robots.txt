@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://cassio.tec.br/sitemap.xml
