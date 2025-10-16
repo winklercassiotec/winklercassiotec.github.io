@@ -17,7 +17,8 @@
 
   <style>
     body { background-color: #0b1220; color: #e5e7eb; font-family: 'Inter', sans-serif; }
-    video { border-radius: 1rem; }
+    video { border-radius: 1rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    video:hover { transform: scale(1.03); box-shadow: 0 0 30px rgba(99, 102, 241, 0.4); }
     .gradient-bg {
       background: linear-gradient(135deg, #020617 0%, #07102a 50%, #081226 100%);
     }
@@ -50,7 +51,7 @@
 
       <!-- Hero video -->
       <div data-aos="fade-left">
-        <video autoplay muted loop playsinline preload="metadata" class="w-full h-72 object-cover shadow-2xl"
+        <video autoplay muted loop playsinline preload="metadata" class="w-full h-80 object-cover shadow-2xl"
           src="https://raw.githubusercontent.com/winklercassiotec/winklercassiotec.github.io/main/chatbot/Chatbot_I.mp4"
           poster="poster-1.jpg">
         </video>
@@ -66,16 +67,18 @@
         Três testes que mostram prototipação, integração e conversas humanizadas — rodando em ambiente real.
       </p>
 
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full aspect-video object-cover"
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full h-[320px] md:h-[380px] object-cover shadow-xl cursor-pointer"
           src="https://raw.githubusercontent.com/winklercassiotec/winklercassiotec.github.io/main/chatbot/Chatbot_I.mp4"></video>
-        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full aspect-video object-cover"
+
+        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full h-[320px] md:h-[380px] object-cover shadow-xl cursor-pointer"
           src="https://raw.githubusercontent.com/winklercassiotec/winklercassiotec.github.io/main/chatbot/Chatbot_II.mp4"></video>
-        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full aspect-video object-cover"
+
+        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full h-[320px] md:h-[380px] object-cover shadow-xl cursor-pointer"
           src="https://raw.githubusercontent.com/winklercassiotec/winklercassiotec.github.io/main/chatbot/Chatbot_III.mp4"></video>
       </div>
 
-      <p class="mt-8 text-sm text-gray-400">Os vídeos estão em autoplay silencioso. Clique para ativar o som localmente.</p>
+      <p class="mt-8 text-sm text-gray-400">Clique em qualquer vídeo para ativar o som. Clique novamente para silenciar.</p>
     </div>
   </section>
 
@@ -149,7 +152,7 @@
   <!-- FOOTER -->
   <footer class="py-8 border-t border-gray-900 text-sm text-gray-500 px-6 lg:px-12">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <div>© <span id="year"></span> · Chatbot</div>
+      <div>© <span id="year"></span> · Chatbot Winkler</div>
       <div class="flex gap-4 items-center">
         <a href="#" class="text-gray-400 hover:text-gray-300">Privacidade</a>
         <a href="#" class="text-gray-400 hover:text-gray-300">Termos</a>
@@ -160,6 +163,14 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     AOS.init({ duration: 800, once: true });
+
+    // Ativa/desativa som ao clicar nos vídeos
+    document.querySelectorAll('video').forEach(video => {
+      video.addEventListener('click', () => {
+        video.muted = !video.muted;
+        if (!video.muted) video.volume = 1.0;
+      });
+    });
   </script>
 </body>
 </html>
