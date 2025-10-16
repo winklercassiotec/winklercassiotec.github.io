@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chatbots inteligentes para WhatsApp — automação conversacional que gera vendas e reduz custos." />
+  <meta property="og:title" content="Chatbots que pensam, respondem e vendem" />
+  <meta property="og:description" content="Integração com WhatsApp Business. Fluxos personalizáveis e IA conversacional." />
+  <title>Chatbot — Conversas que convertem</title>
 
+  <!-- TailwindCSS via CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <!-- Animate on Scroll (leve, substitui Framer Motion para HTML puro) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <style>
+    body { background-color: #0b1220; color: #e5e7eb; font-family: 'Inter', sans-serif; }
+    video { border-radius: 1rem; }
+    .gradient-bg {
+      background: linear-gradient(135deg, #020617 0%, #07102a 50%, #081226 100%);
+    }
+  </style>
+</head>
+
+<body class="antialiased overflow-x-hidden">
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center justify-center gradient-bg px-6 lg:px-12">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-up">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+          Chatbots que <span class="text-indigo-400">pensam</span>,
+          <span class="text-cyan-400">respondem</span> e
+          <span class="text-indigo-400">vendem</span>.
+        </h1>
+        <p class="mt-6 text-lg text-gray-300 max-w-xl">
+          Integre seu negócio ao WhatsApp com IA conversacional real. Automatize atendimentos, capture leads e aumente conversões sem perder o toque humano.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#demos" class="inline-flex items-center px-5 py-3 rounded-2xl bg-indigo-500 text-black font-semibold shadow-lg">
+            Ver Demonstração
+          </a>
+          <a href="https://wa.me/5511999999999?text=Olá! Quero saber mais sobre o chatbot." target="_blank" class="inline-flex items-center px-5 py-3 rounded-2xl border border-gray-700 text-gray-200">
+            Falar no WhatsApp
+          </a>
+        </div>
+        <div class="mt-10 grid grid-cols-2 gap-4 text-sm text-gray-400">
+          <div>
+            <div class="font-medium text-gray-100">Integração</div>
+            WhatsApp Business API
+          </div>
+          <div>
+            <div class="font-medium text-gray-100">Escala</div>
+            Multicanais & métricas
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero video -->
+      <div data-aos="fade-left">
+        <video autoplay muted loop playsinline preload="metadata" class="w-full h-72 object-cover shadow-2xl"
+          src="https://raw.githubusercontent.com/seuusuario/seurepo/main/videos/demo-1.mp4"
+          poster="poster-1.jpg">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMOS -->
+  <section id="demos" class="py-20 px-6 lg:px-12 bg-[#0a152d]">
+    <div class="max-w-6xl mx-auto">
+      <h2 data-aos="fade-up" class="text-3xl font-semibold">Demonstrações em tempo real</h2>
+      <p class="mt-3 text-gray-400 max-w-2xl">
+        Três testes que mostram prototipação, integração e conversas humanizadas — rodando em ambiente real.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full aspect-video object-cover"
+          src="https://raw.githubusercontent.com/seuusuario/seurepo/main/videos/demo-1.mp4"></video>
+        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full aspect-video object-cover"
+          src="https://raw.githubusercontent.com/seuusuario/seurepo/main/videos/demo-2.mp4"></video>
+        <video data-aos="zoom-in" autoplay muted loop playsinline preload="metadata" class="w-full aspect-video object-cover"
+          src="https://raw.githubusercontent.com/seuusuario/seurepo/main/videos/demo-3.mp4"></video>
+      </div>
+
+      <p class="mt-8 text-sm text-gray-400">Dica: os vídeos estão em autoplay silencioso. Clique para ativar som localmente.</p>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="py-16 border-t border-gray-800 px-6 lg:px-12">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-right">
+        <h3 class="text-2xl font-semibold">Por que escolher este chatbot?</h3>
+        <p class="mt-3 text-gray-400 max-w-xl">
+          Uma solução prática, integrável e orientada a resultados — projetada para equipes que precisam escalar atendimento e conversão com segurança.
+        </p>
+
+        <ul class="mt-6 space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#0f1724] text-indigo-400 text-xl">🤖</span>
+            <div>
+              <div class="font-medium">IA Conversacional Real</div>
+              Fluxos dinâmicos com memória de contexto e fallback para atendente humano.
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#0f1724] text-cyan-400 text-xl">🔗</span>
+            <div>
+              <div class="font-medium">WhatsApp Nativo</div>
+              Integração direta com Business API e handover automático.
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#0f1724] text-indigo-400 text-xl">⚙️</span>
+            <div>
+              <div class="font-medium">Personalizável</div>
+              Personas, fluxos por segmento e templates de campanha.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div data-aos="fade-left" class="bg-[#041022] p-8 rounded-2xl shadow-inner">
+        <div class="text-xl font-semibold">Impacto projetado</div>
+        <div class="mt-4 text-gray-300">
+          Reduza custos operacionais, melhore SLAs e converta mais usando conversas que entendem intenção.
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-4">
+          <div class="p-4 bg-[#061426] rounded-lg text-center">
+            <div class="text-3xl font-bold">40%</div>
+            <div class="text-sm text-gray-400">Redução média de custo</div>
+          </div>
+          <div class="p-4 bg-[#061426] rounded-lg text-center">
+            <div class="text-3xl font-bold">3x</div>
+            <div class="text-sm text-gray-400">Aumento de conversão</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 text-center px-6 lg:px-12">
+    <h4 data-aos="fade-up" class="text-2xl font-semibold">Pronto para evoluir seu atendimento?</h4>
+    <p class="mt-3 text-gray-400">Converse com o fundador e agende uma prova de conceito.</p>
+    <div class="mt-6" data-aos="zoom-in">
+      <a href="https://wa.me/5511999999999?text=Olá! Quero saber mais sobre o chatbot."
+         target="_blank"
+         class="inline-flex items-center px-6 py-3 rounded-2xl bg-indigo-500 text-black font-semibold">
+        Falar com o fundador
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-gray-900 text-sm text-gray-500 px-6 lg:px-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>© <span id="year"></span> · Chatbot</div>
+      <div class="flex gap-4 items-center">
+        <a href="#" class="text-gray-400 hover:text-gray-300">Privacidade</a>
+        <a href="#" class="text-gray-400 hover:text-gray-300">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
